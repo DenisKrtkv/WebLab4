@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <a href="">
+          <span id="header1">Catch the BALL!</span>
+          <span id="header2">The best game </span>
+          <span id="header3">EVEEER!</span>
+        </a>
+      </section>
+      <nav>
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <ul class="menu touch">
+            <li><a id="start">Start!</a></li>
+            <li><a href="">Leaderbord</a></li>
+            <li><a href="">how it work</a></li>
+            <li><a class="contacts" href="">contact us</a></li>
+            <li><a href="">join us</a></li>
+          </ul>
+          <span class="toggle">#</span>
+        </label>
+      </nav>
+    </header>
+    <div id="Game">
+      <div id="GameField">
+        <div id="basket"></div>
+        <div id="ball"></div>
+        <div id="result">
+          <div id="mainRes">
+            <div id="score">0</div>
+            <div id="health"></div>
+          </div>
+          <div id="time">0</div>
+          <div id="speed">1</div>
+        </div>
+        <div id="gameOver"> Game over!</div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.header a {
+  color: black;
+  background: #f6f5f4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+#header1 {
+  margin-right: 5em;
+  font-size: 38px;
+}
+#header2 {
+  margin-left: 5em;
+  font-size: 20px;
+}
+#header3 {
+  margin-left: 8em;
+  font-size: 35px;
+}
+nav {
+  margin: auto;
+  max-width: 1100px;
+  width: 100%;
+}
+#checkbox-menu,
+.toggle {
+  display: none;
+}
+.menu {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.menu li a {
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  align-self: center;
+  font-size: 13px;
+  transition: background 0.2s linear;
+}
+.menu li a:hover {
+  background: #f6f5f4;
+  border-radius: 5px;
+}
+#start {
+  padding: 7px;
+  font-size: 25px;
+  margin-right: 240px;
+}
+.menu li a.contacts {
+  margin-right: 100px;
+}
+#Game {
+  height: 100%;
+  width: 100%;
+  margin: 0em;
+}
+#GameField {
+  position: relative;
+  background: url("images/background.png");
+  height: 400px;
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#basket {
+  position: absolute;
+  background: url("images/basket.png");
+  width: 128px;
+  height: 128px;
+  left: 43.7%;
+  bottom: 1%;
+}
+#ball {
+  position: absolute;
+  background: url("images/ball.png");
+  width: 64px;
+  height: 64px;
+  left: 48%;
+}
+#result {
+  position: relative;
+  border-radius: 5px;
+  width: 100px;
+  height: 80px;
+  margin: 1% 1%;
+}
+#mainRes{
+display: flex;
+flex-direction: row;
+width: 800px;
+height: 64px;
+}
+#score {
+  width: 100px;
+  font-size: 50px;
+}
+#health{
+  background: url("images/health.png");
+  height: 64px;
+  margin: 0 2% auto;
+  margin-left: auto;
+}
+#time #speed {
+  margin: 5%;
+  font-size: 16px;
+}
+#gameOver{
+  position: relative;
+  font-size: 60px;
+  text-align: center;
+  visibility: hidden;
+}
+
+/*не готово*/
+@media screen and (max-width: 765px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+    color: black;
+    background: white;
+    transition: all 0.1s linear;
+  }
+  .toggle:hover {
+    background: white;
+  }
+  #checkbox-menu:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s linear;
+  }
+  #checkbox-menu:checked + label .touch {
+    height: 350px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height 0.3s linear;
+  }
+  .menu li {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+  .menu li a.logo {
+    font-size: 21px;
+    margin-right: 0px;
+  }
+  .menu li a.contacts {
+    margin-right: 0px;
+  }
+}
